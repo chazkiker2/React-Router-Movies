@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Route, Switch, useParam, useRouteMatch } from "react-router-dom";
+import MovieCard from "./MovieCard";
 
 export default function MovieList(props) {
 	// const { movies } = props;
@@ -11,13 +12,14 @@ export default function MovieList(props) {
 				props.movies.map(movie => {
 					return (
 					<Link key={movie.id} to={`/movies/${movie.id}`}>
-						<MovieDetails key={movie.id} movie={movie} />
+						{/* <MovieDetails key={movie.id} id={movie.id} movie={movie} /> */}
+						<MovieCard key={movie.id} id={movie.id} movie={movie} />
 					</Link>
-				)
-			})
+					)
+				})
 			}
-				</div >
-	)
+		</div>
+	);
 }
 
 function MovieDetails(props) {

@@ -9,7 +9,7 @@ export default function Movie(props) {
 	const [stateId, setStateId] = useState(id);
 
 	// const { path, url } = useRouteMatch();
-	console.log(id);
+	// console.log(id);
   // Change ^^^ that line and use a hook to obtain the :id parameter from the URL
 
   useEffect(() => {
