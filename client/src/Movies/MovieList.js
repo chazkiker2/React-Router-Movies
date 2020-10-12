@@ -22,20 +22,20 @@ export default function MovieList(props) {
 	);
 }
 
-function MovieDetails(props) {
-	const { title, director, metascore } = props.movie;
+// function MovieDetails(props) {
+// 	const { title, director, metascore } = props.movie;
 
-	return (
+// 	return (
 
-		<div className="movie-card">
-			<h2>{title}</h2>
-			<div className="movie-director">
-				Director: <em>{director}</em>
-			</div>
-			<div className="movie-metascore">
-				Metascore: <strong>{metascore}</strong>
-			</div>
-		</div>
+// 		<div className="movie-card">
+// 			<h2>{title}</h2>
+// 			<div className="movie-director">
+// 				Director: <em>{director}</em>
+// 			</div>
+// 			<div className="movie-metascore">
+// 				Metascore: <strong>{metascore}</strong>
+// 			</div>
+// 		</div>
 
-	);
-}
+// 	);
+// }

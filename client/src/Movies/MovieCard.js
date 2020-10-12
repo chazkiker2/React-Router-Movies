@@ -6,11 +6,11 @@ import axios from 'axios';
 // import MovieCard from "./MovieCard";
 
 export default function MovieCard(props) {
-	const [movie, setMovie] = useState(props.movie);
+	const [movie, setMovie] = useState();
 	let { id } = useParams();
 	const [sId, setSId] = useState(id);
+	
 	const [isOpen, setIsOpen] = useState(false);
-
 	const toggle = () => { setIsOpen(!isOpen) };
 
 
